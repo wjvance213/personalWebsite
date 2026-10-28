@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="wrap">
         <div>
           <Reveal className="eyebrow">{hero.eyebrow}</Reveal>
-          <Reveal as="h1">Hi, I'm {site.name}.</Reveal>
+          <Reveal as="h1">{site.name}</Reveal>
           <Reveal as="p" className="lead">{hero.lead}</Reveal>
           <Reveal className="btns">
             <a className="btn primary" href="#projects">See my projects</a>

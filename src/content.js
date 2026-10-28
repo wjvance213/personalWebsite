@@ -5,7 +5,7 @@ import surfPhoto from './assets/surf.jpg'
 import blenderTrackerClip from './assets/BlenderTrackerclip.mp4'
 
 export const site = {
-  name: 'Your Name', // TODO: real name
+  name: 'William Vance',
   github: 'https://github.com/wjvance213',
   resume: null, // e.g. '/resume.pdf' once it's in public/
   linkedin: null,
