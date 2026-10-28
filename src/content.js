@@ -7,15 +7,16 @@ import blenderTrackerClip from './assets/BlenderTrackerclip.mp4'
 export const site = {
   name: 'William Vance',
   github: 'https://github.com/wjvance213',
-  resume: null, // e.g. '/resume.pdf' once it's in public/
+  resume: null, // set to '/resume.pdf' once the file is in public/
   linkedin: null,
-  email: null,
+  email: 'wjvance213@gmail.com',
 }
 
 export const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#projects', label: 'Projects' },
   { href: '#experience', label: 'Experience' },
+  { href: '#resume', label: 'Résumé' },
   { href: '#life', label: 'Beyond Code' },
   { href: '#contact', label: 'Contact' },
 ]
@@ -79,6 +80,11 @@ export const experience = [
       'US Sailing certified instructor. In my final season I was appointed head instructor of the sailing school. I also crewed in weekend races and was a regularly sought-out crew member.',
   },
 ]
+
+export const resume = {
+  text: 'A one-page summary of my education, projects, and experience.',
+  pendingText: "My résumé is on its way. In the meantime, email me and I'll send a copy.",
+}
 
 export const hobbies = [
   { title: 'Wakesurfing', level: 'Expert', text: 'Surfing since 2013. Now landing ropeless 360s and working on ollies, with pop shuvits next.' },
