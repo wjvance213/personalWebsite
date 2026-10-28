@@ -6,7 +6,6 @@ export default function Nav() {
       <div className="wrap">
         <a className="logo" href="#top">
           {site.name}
-          <span>.</span>
         </a>
         <ul>
           {navLinks.map((link) => (
