@@ -15,7 +15,7 @@ export const site = {
 export const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#projects', label: 'Projects' },
-  { href: '#experience', label: 'Experience' },
+  { href: '#experience', label: 'Work Experience' },
   { href: '#resume', label: 'Résumé' },
   { href: '#life', label: 'Beyond Code' },
   { href: '#contact', label: 'Contact' },
@@ -78,6 +78,16 @@ export const experience = [
     title: 'Head Sailing Instructor',
     description:
       'US Sailing certified instructor. In my final season I was appointed head instructor of the sailing school. I also crewed in weekend races and was a regularly sought-out crew member.',
+  },
+  {
+    when: '5 months',
+    title: 'Registered Behavior Technician (RBT)',
+    description: 'Action Behavior Centers.', // TODO: add a line on what the role involved
+  },
+  {
+    when: '2 years',
+    title: 'Sales Associate',
+    description: 'Rocky Mountain Chocolate Factory.', // TODO: add a line on what the role involved
   },
 ]
 

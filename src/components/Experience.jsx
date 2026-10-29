@@ -4,7 +4,7 @@ import Section from './Section.jsx'
 
 export default function Experience() {
   return (
-    <Section id="experience" title="Experience" subtitle="Leadership and work outside the classroom.">
+    <Section id="experience" title="Work Experience" subtitle="Leadership and work outside the classroom.">
       {experience.map((job, i) => (
         <Reveal className="job" index={i} key={job.title}>
           <div className="when">{job.when}</div>
