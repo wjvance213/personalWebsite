@@ -44,9 +44,15 @@ nav {
 }
 nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
 .logo { font-weight: 800; letter-spacing: -0.02em; text-decoration: none; color: var(--text); }
-nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; }
-nav ul a { color: var(--muted); text-decoration: none; font-size: 15px; }
+nav ul { display: flex; gap: 6px; list-style: none; margin: 0; padding: 0; }
+nav ul a {
+  display: block; padding: 6px 10px; border-radius: 8px;
+  color: var(--muted); text-decoration: none; font-size: 15px;
+  transition: background-color 0.25s, color 0.25s;
+}
 nav ul a:hover { color: var(--text); }
+/* Section currently in view (set by Nav's scroll tracking) */
+nav ul a.active { color: var(--text); background: color-mix(in srgb, var(--accent) 20%, transparent); }
 
 /* Hero */
 .hero { padding: 88px 0 72px; }
