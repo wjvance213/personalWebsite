@@ -1,5 +1,5 @@
 // All site copy lives here so it can be edited without touching the components.
-// Anything still missing (résumé, LinkedIn, email, Squilly's Delay) is left out
+// Anything still missing (résumé, LinkedIn, location, Squilly's Delay) is left out
 // rather than shown as a placeholder; add it here when it's ready.
 import surfPhoto from './assets/surf.jpg'
 import blenderTrackerClip from './assets/BlenderTrackerclip.mp4'
@@ -7,7 +7,7 @@ import blenderTrackerClip from './assets/BlenderTrackerclip.mp4'
 export const site = {
   name: 'William Vance',
   github: 'https://github.com/wjvance213',
-  resume: null, // set to '/resume.pdf' once the file is in public/
+  resume: null, // set to '/resume.pdf' once the file is in public/; adds a Résumé card to Contact and a Hero button
   linkedin: null,
   email: 'wjvance213@gmail.com',
 }
@@ -16,7 +16,6 @@ export const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#projects', label: 'Projects' },
   { href: '#experience', label: 'Work Experience' },
-  { href: '#resume', label: 'Résumé' },
   { href: '#life', label: 'Beyond Code' },
   { href: '#contact', label: 'Contact' },
 ]
@@ -91,11 +90,6 @@ export const experience = [
   },
 ]
 
-export const resume = {
-  text: 'A one-page summary of my education, projects, and experience.',
-  pendingText: "My résumé is on its way. In the meantime, email me and I'll send a copy.",
-}
-
 export const hobbies = [
   { title: 'Wakesurfing', level: 'Expert', text: 'Surfing since 2013. Now landing ropeless 360s and working on ollies, with pop shuvits next.' },
   { title: 'Sailing', level: 'Instructor', text: 'Grew up sailing with my family, went on to race crew, and became head instructor.' },
@@ -108,4 +102,5 @@ export const hobbies = [
 export const contact = {
   heading: "Let's talk",
   text: "I'm looking for software internships. The best way to reach me is through any of the links below.",
+  location: null, // e.g. 'Boulder, Colorado'; shows a Location card once set
 }

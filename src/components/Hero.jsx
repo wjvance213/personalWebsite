@@ -13,7 +13,7 @@ export default function Hero() {
             {site.email && <a className="btn primary" href={`mailto:${site.email}`}>{site.email}</a>}
             <a className="btn" href={site.github} target="_blank" rel="noreferrer">GitHub</a>
             {site.linkedin && <a className="btn" href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>}
-            <a className="btn" href="#resume">Résumé</a>
+            {site.resume && <a className="btn" href={site.resume} target="_blank" rel="noreferrer">Résumé</a>}
           </Reveal>
         </div>
         <Reveal className="portrait">

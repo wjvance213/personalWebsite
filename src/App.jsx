@@ -6,7 +6,6 @@ import Hero from './components/Hero.jsx'
 import Hobbies from './components/Hobbies.jsx'
 import Nav from './components/Nav.jsx'
 import Projects from './components/Projects.jsx'
-import Resume from './components/Resume.jsx'
 import Skills from './components/Skills.jsx'
 
 export default function App() {
@@ -19,7 +18,6 @@ export default function App() {
         <Projects />
         <Skills />
         <Experience />
-        <Resume />
         <Hobbies />
         <Contact />
       </main>
