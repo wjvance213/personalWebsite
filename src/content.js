@@ -1,5 +1,5 @@
 // All site copy lives here so it can be edited without touching the components.
-// Anything still missing (résumé, Squilly's Delay) is left out
+// Anything still missing (like the résumé) is left out
 // rather than shown as a placeholder; add it here when it's ready.
 import surfPhoto from './assets/surf.jpg'
 import blenderTrackerClip from './assets/BlenderTrackerclip.mp4'
@@ -58,17 +58,17 @@ export const projects = [
     links: [{ label: 'GitHub', href: 'https://github.com/wjvance213/personalWebsite' }],
   },
   {
-    title: 'Inventory Hash Table',
-    tags: ['Data Structures', 'Hash Tables', 'Linked Lists'],
+    title: "Squilly's Delay",
+    tags: ['C++', 'JUCE', 'VST3', 'DSP'],
     description:
-      'Final project for my data structures class: an inventory system built on a hash table. Items are hashed by type, weight, and damage, and collisions chain into linked lists so similar items stay close together.',
+      'In progress: a tape-echo style delay effect built as a VST3 plugin for FL Studio. It handles delay, feedback, and wet/dry mix in real time, all under low-latency audio constraints.',
     links: [],
   },
 ]
 
 export const skills = [
   { title: 'Languages', items: ['Python', 'JavaScript', 'C++'] },
-  { title: 'Frameworks & Tools', items: ['React, Vite', 'Git / GitHub', 'Blender, MediaPipe', 'Unity'] },
+  { title: 'Frameworks & Tools', items: ['React, Vite', 'Git / GitHub', 'Blender, MediaPipe', 'JUCE (audio plugins)', 'Unity'] },
   { title: 'Coursework', items: ['Data Structures', 'Embedded Software'] },
 ]
 
