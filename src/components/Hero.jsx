@@ -1,4 +1,5 @@
 import { hero, site } from '../content.js'
+import { GitHubIcon, LinkedInIcon } from './Icons.jsx'
 import Reveal from './Reveal.jsx'
 
 export default function Hero() {
@@ -11,8 +12,8 @@ export default function Hero() {
           <Reveal as="p" className="lead">{hero.lead}</Reveal>
           <Reveal className="btns">
             {site.email && <a className="btn primary" href={`mailto:${site.email}`}>{site.email}</a>}
-            <a className="btn" href={site.github} target="_blank" rel="noreferrer">GitHub</a>
-            {site.linkedin && <a className="btn" href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>}
+            <a className="btn icon" href={site.github} target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><GitHubIcon /></a>
+            {site.linkedin && <a className="btn icon" href={site.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><LinkedInIcon /></a>}
             {site.resume && <a className="btn" href={site.resume} target="_blank" rel="noreferrer">Résumé</a>}
           </Reveal>
         </div>

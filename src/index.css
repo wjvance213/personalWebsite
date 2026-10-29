@@ -68,6 +68,8 @@ h1 { font-size: clamp(2.4rem, 6vw, 3.8rem); line-height: 1.05; letter-spacing: -
 }
 .btn.primary { background: var(--accent); color: var(--charcoal); border-color: var(--accent); }
 .btn:hover { filter: brightness(1.08); }
+/* Square icon-only button; matches the height of a text button */
+.btn.icon { display: inline-grid; place-items: center; padding: 0; width: 48px; height: 48px; }
 .portrait {
   aspect-ratio: 4 / 5; border-radius: 24px;
   background: var(--accent-soft);
