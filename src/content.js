@@ -9,6 +9,7 @@ export const site = {
   github: 'https://github.com/wjvance213',
   resume: null, // set to '/resume.pdf' once the file is in public/; adds a Résumé card to Contact and a Hero button
   linkedin: 'https://www.linkedin.com/in/will-vance-36742a363/',
+  instagram: 'https://www.instagram.com/whale_vans1/',
   email: 'wjvance213@gmail.com',
 }
 

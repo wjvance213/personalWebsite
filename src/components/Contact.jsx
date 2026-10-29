@@ -1,5 +1,5 @@
 import { contact, site } from '../content.js'
-import { ArrowUpRightIcon, FileIcon, GitHubIcon, LinkedInIcon, MailIcon, MapPinIcon } from './Icons.jsx'
+import { ArrowUpRightIcon, FileIcon, GitHubIcon, InstagramIcon, LinkedInIcon, MailIcon, MapPinIcon } from './Icons.jsx'
 import Reveal from './Reveal.jsx'
 import Section from './Section.jsx'
 
@@ -24,10 +24,11 @@ function ContactItem({ icon, label, value, href, external }) {
 }
 
 export default function Contact() {
-  // Links without a value yet (LinkedIn) are left out.
+  // Links without a value yet are left out.
   const online = [
     { name: 'GitHub', href: site.github, icon: <GitHubIcon size={18} /> },
     { name: 'LinkedIn', href: site.linkedin, icon: <LinkedInIcon size={18} /> },
+    { name: 'Instagram', href: site.instagram, icon: <InstagramIcon size={18} /> },
   ].filter((link) => link.href)
 
   return (

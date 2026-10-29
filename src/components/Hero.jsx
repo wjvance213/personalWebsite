@@ -1,5 +1,5 @@
 import { hero, site } from '../content.js'
-import { GitHubIcon, LinkedInIcon } from './Icons.jsx'
+import { GitHubIcon, InstagramIcon, LinkedInIcon } from './Icons.jsx'
 import Reveal from './Reveal.jsx'
 
 export default function Hero() {
@@ -14,6 +14,7 @@ export default function Hero() {
             {site.email && <a className="btn primary" href={`mailto:${site.email}`}>{site.email}</a>}
             <a className="btn icon" href={site.github} target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><GitHubIcon /></a>
             {site.linkedin && <a className="btn icon" href={site.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><LinkedInIcon /></a>}
+            {site.instagram && <a className="btn icon" href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram"><InstagramIcon /></a>}
             {site.resume && <a className="btn" href={site.resume} target="_blank" rel="noreferrer">Résumé</a>}
           </Reveal>
         </div>
