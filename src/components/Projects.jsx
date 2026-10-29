@@ -14,7 +14,7 @@ function Thumb({ project }) {
   }
   if (project.image) {
     return (
-      <div className={`thumb ${project.imageFit === 'contain' ? 'thumb-contain' : ''}`.trim()}>
+      <div className={`thumb ${project.imageFit === 'contain' ? 'thumb-contain' : ''}`.trim()} style={project.imageBg && { background: project.imageBg }}>
         <img src={project.image} alt={project.mediaLabel} />
       </div>
     )

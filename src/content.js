@@ -3,6 +3,7 @@
 // rather than shown as a placeholder; add it here when it's ready.
 import surfPhoto from './assets/surf.jpg'
 import blenderTrackerClip from './assets/BlenderTrackerclip.mp4'
+import cloudflareLogo from './assets/cloudLogo.png'
 import flLogo from './assets/fllogo.jpg'
 import guitarRaw from './assets/guitarsampleraw.mp3'
 import guitarDelay from './assets/squillydelaysample.mp3'
@@ -55,6 +56,10 @@ export const projects = [
   },
   {
     title: 'This Portfolio',
+    image: cloudflareLogo,
+    imageFit: 'contain',
+    imageBg: '#f28020', // the logo's own orange, so the letterboxing blends in
+    mediaLabel: 'Cloudflare logo',
     tags: ['React', 'Vite', 'Cloudflare'],
     description:
       'A rebuild of my earlier plain-HTML class site, now built with React and Vite and auto-deployed to Cloudflare on every push.',
@@ -64,6 +69,7 @@ export const projects = [
     title: "Squilly's Delay",
     image: flLogo,
     imageFit: 'contain', // tall logo: show it whole instead of cropping to the card
+    imageBg: '#121212',
     mediaLabel: 'FL Studio logo',
     // The same guitar clip, dry and then through the plugin
     samples: [
@@ -73,7 +79,7 @@ export const projects = [
     tags: ['C++', 'JUCE', 'VST3', 'DSP'],
     description:
       'In progress: a tape-echo style delay effect built as a VST3 plugin for FL Studio. It handles delay, feedback, and wet/dry mix in real time, all under low-latency audio constraints.',
-    links: [],
+    links: [{ label: 'GitHub', href: 'https://github.com/wjvance213/SquillysDelay' }],
   },
 ]
 
@@ -108,7 +114,7 @@ export const hobbies = [
   { title: 'Climbing', level: 'Since 2021', text: "Picked it up when I moved to Colorado. It's the closest thing to a real-life video game." },
   { title: 'Skiing', level: 'Since 2020', text: 'Said yes to a ski trip with no experience, and was on double blacks within a month.' },
   { title: 'Music', level: 'Daily', text: 'Guitar (electric and acoustic), piano, and producing in FL Studio. I started two years ago.' },
-  { title: 'Gaming', level: 'Always', text: 'Terraria, Satisfactory, Subnautica, Valheim, Rocket League, Destiny 2.' },
+  { title: 'Gaming', level: 'Love', text: 'Terraria, Satisfactory, Subnautica, Valheim, Rocket League, Destiny 2.' },
 ]
 
 export const contact = {
