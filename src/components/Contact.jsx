@@ -4,7 +4,7 @@ import Reveal from './Reveal.jsx'
 import Section from './Section.jsx'
 
 // One row in the left column: icon tile, small label, value, and an arrow if it's a link.
-function ContactItem({ icon, label, value, href, external }) {
+function ContactItem({ icon, label, value, href }) {
   const body = (
     <>
       <span className="contact-icon">{icon}</span>
@@ -17,7 +17,7 @@ function ContactItem({ icon, label, value, href, external }) {
   )
   if (!href) return <div className="contact-item">{body}</div>
   return (
-    <a className="contact-item" href={href} {...(external && { target: '_blank', rel: 'noreferrer' })}>
+    <a className="contact-item" href={href}>
       {body}
     </a>
   )
@@ -36,7 +36,7 @@ export default function Contact() {
       <div className="contact-grid">
         <Reveal className="contact-items">
           {site.email && <ContactItem icon={<MailIcon />} label="Email" value={site.email} href={`mailto:${site.email}`} />}
-          {site.resume && <ContactItem icon={<FileIcon />} label="Résumé" value="Download PDF" href={site.resume} external />}
+          {site.resume && <ContactItem icon={<FileIcon />} label="Résumé" value="View PDF" href="#resume" />}
           {contact.location && <ContactItem icon={<MapPinIcon />} label="Location" value={contact.location} />}
         </Reveal>
         <Reveal className="contact-side">

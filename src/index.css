@@ -186,6 +186,28 @@ a.contact-item:hover .contact-value, a.contact-item:hover .contact-arrow { color
 .online-links a:hover { background: var(--bg-alt); color: var(--text); }
 .contact-cta { text-align: center; padding: 15px 20px; }
 
+/* Résumé viewer: full-screen dialog, download top-left, close top-right */
+body:has(.resume-viewer[open]) { overflow: hidden; }
+.resume-viewer {
+  width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0;
+  border: 0; background: var(--bg); color: var(--text);
+  flex-direction: column;
+}
+.resume-viewer[open] { display: flex; }
+.resume-viewer::backdrop { background: color-mix(in srgb, black 60%, transparent); }
+.viewer-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 16px; border-bottom: 1px solid var(--border); background: var(--bg-alt);
+}
+.viewer-close {
+  width: 40px; height: 40px; border-radius: 10px; cursor: pointer;
+  font: inherit; font-size: 26px; line-height: 1; color: var(--text);
+  background: transparent; border: 1px solid var(--border);
+}
+.viewer-close:hover { border-color: var(--accent); }
+.viewer-frame { flex: 1; width: 100%; border: 0; background: var(--surface); }
+.viewer-fallback { flex: 1; display: grid; place-content: center; justify-items: center; gap: 12px; text-align: center; padding: 16px; color: var(--muted); }
+
 footer { padding: 32px 0; color: var(--muted); font-size: 14px; text-align: center; border-top: 1px solid var(--border); }
 
 /* Scroll reveal: fades/slides in once when entering the viewport, then stays visible.

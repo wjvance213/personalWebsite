@@ -1,6 +1,7 @@
 // All site copy lives here so it can be edited without touching the components.
-// Anything still missing (like the résumé) is left out
+// Anything still missing is left out
 // rather than shown as a placeholder; add it here when it's ready.
+import resumePdf from './assets/Resume-2.pdf'
 import surfPhoto from './assets/surf.jpg'
 import blenderTrackerClip from './assets/BlenderTrackerclip.mp4'
 import cloudflareLogo from './assets/cloudLogo.png'
@@ -11,7 +12,8 @@ import guitarDelay from './assets/squillydelaysample.mp3'
 export const site = {
   name: 'William Vance',
   github: 'https://github.com/wjvance213',
-  resume: null, // set to '/resume.pdf' once the file is in public/; adds a Résumé card to Contact and a Hero button
+  resume: resumePdf, // opens in the on-page viewer (#resume); set to null to hide the Résumé button and card
+  resumeFileName: 'William-Vance-Resume.pdf', // name used when downloading
   linkedin: null, // https://www.linkedin.com/in/will-vance-36742a363/ (hidden until the profile is active)
   instagram: 'https://www.instagram.com/whale_vans1/',
   email: 'wjvance213@gmail.com',
