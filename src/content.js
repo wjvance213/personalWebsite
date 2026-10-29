@@ -1,5 +1,5 @@
 // All site copy lives here so it can be edited without touching the components.
-// Anything still missing (résumé, LinkedIn, location, Squilly's Delay) is left out
+// Anything still missing (résumé, Squilly's Delay) is left out
 // rather than shown as a placeholder; add it here when it's ready.
 import surfPhoto from './assets/surf.jpg'
 import blenderTrackerClip from './assets/BlenderTrackerclip.mp4'
@@ -8,7 +8,7 @@ export const site = {
   name: 'William Vance',
   github: 'https://github.com/wjvance213',
   resume: null, // set to '/resume.pdf' once the file is in public/; adds a Résumé card to Contact and a Hero button
-  linkedin: null,
+  linkedin: 'https://www.linkedin.com/in/will-vance-36742a363/',
   email: 'wjvance213@gmail.com',
 }
 
@@ -102,5 +102,5 @@ export const hobbies = [
 export const contact = {
   heading: "Let's talk",
   text: "I'm looking for software internships. The best way to reach me is through any of the links below.",
-  location: null, // e.g. 'Boulder, Colorado'; shows a Location card once set
+  location: 'Broomfield, CO',
 }
