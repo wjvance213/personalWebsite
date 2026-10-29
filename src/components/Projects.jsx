@@ -1,4 +1,5 @@
 import { projects } from '../content.js'
+import AudioSamples from './AudioSamples.jsx'
 import LoopVideo from './LoopVideo.jsx'
 import Reveal from './Reveal.jsx'
 import Section from './Section.jsx'
@@ -13,7 +14,7 @@ function Thumb({ project }) {
   }
   if (project.image) {
     return (
-      <div className="thumb">
+      <div className={`thumb ${project.imageFit === 'contain' ? 'thumb-contain' : ''}`.trim()}>
         <img src={project.image} alt={project.mediaLabel} />
       </div>
     )
@@ -35,6 +36,7 @@ export default function Projects() {
               ))}
             </div>
             <p>{project.description}</p>
+            {project.samples && <AudioSamples samples={project.samples} />}
             {project.links.length > 0 && (
               <div className="links">
                 {project.links.map((link) => (

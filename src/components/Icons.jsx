@@ -66,3 +66,19 @@ export function InstagramIcon({ size = 20 }) {
     </svg>
   )
 }
+
+export function PlayIcon(props) {
+  return (
+    <Outline {...props}>
+      <path d="M6 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 6 3.5Z" />
+    </Outline>
+  )
+}
+
+export function StopIcon(props) {
+  return (
+    <Outline {...props}>
+      <rect x="5" y="5" width="14" height="14" rx="2" />
+    </Outline>
+  )
+}

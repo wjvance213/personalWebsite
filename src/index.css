@@ -112,6 +112,9 @@ h2 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 8px; }
 .card .thumb video,
 .card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .card .thumb video { pointer-events: none; }
+/* Whole image letterboxed on a background matching the FL Studio logo's own (#121212) */
+.card .thumb-contain { background: #121212; padding: 10px 0; }
+.card .thumb-contain img { object-fit: contain; }
 .card .thumb-empty {
   display: grid; place-items: center;
   color: var(--text); font-weight: 700; font-size: 1.1rem; letter-spacing: -0.01em;
@@ -123,6 +126,15 @@ h2 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 8px; }
   font-size: 12px; padding: 3px 9px; border-radius: 999px;
   background: var(--rose-soft); color: var(--text); font-weight: 600;
 }
+.samples { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.sample {
+  display: inline-flex; align-items: center; gap: 7px; padding: 7px 12px; border-radius: 8px;
+  font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+  color: var(--text); background: transparent; border: 1px solid var(--border);
+  transition: border-color 0.2s, background-color 0.2s;
+}
+.sample:hover { border-color: var(--accent); }
+.sample.playing { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 20%, transparent); }
 .card .links { display: flex; gap: 14px; font-size: 14px; font-weight: 600; }
 .card .links a { color: var(--text); text-decoration-color: var(--accent); text-underline-offset: 3px; }
 

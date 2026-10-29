@@ -3,6 +3,9 @@
 // rather than shown as a placeholder; add it here when it's ready.
 import surfPhoto from './assets/surf.jpg'
 import blenderTrackerClip from './assets/BlenderTrackerclip.mp4'
+import flLogo from './assets/fllogo.jpg'
+import guitarRaw from './assets/guitarsampleraw.mp3'
+import guitarDelay from './assets/squillydelaysample.mp3'
 
 export const site = {
   name: 'William Vance',
@@ -59,6 +62,14 @@ export const projects = [
   },
   {
     title: "Squilly's Delay",
+    image: flLogo,
+    imageFit: 'contain', // tall logo: show it whole instead of cropping to the card
+    mediaLabel: 'FL Studio logo',
+    // The same guitar clip, dry and then through the plugin
+    samples: [
+      { label: 'Original', src: guitarRaw },
+      { label: "Squilly's Delay", src: guitarDelay },
+    ],
     tags: ['C++', 'JUCE', 'VST3', 'DSP'],
     description:
       'In progress: a tape-echo style delay effect built as a VST3 plugin for FL Studio. It handles delay, feedback, and wet/dry mix in real time, all under low-latency audio constraints.',
