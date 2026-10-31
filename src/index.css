@@ -228,7 +228,12 @@ footer { padding: 32px 0; color: var(--muted); font-size: 14px; text-align: cent
   nav ul { display: none; }
   .hero { padding: 48px 0; }
   .hero .wrap, .about { grid-template-columns: 1fr; gap: 32px; }
+  /* Stacked hero reads better centred on phones */
+  .hero .wrap { text-align: center; }
+  .hero p.lead { margin-inline: auto; }
+  .hero .btns { justify-content: center; }
   .portrait { max-width: 280px; }
+  .hero .portrait { margin-inline: auto; }
   .grid, .skills, .hobbies, .contact-grid { grid-template-columns: 1fr; }
   .job { grid-template-columns: 1fr; gap: 4px; }
   section.block { padding: 56px 0; }
